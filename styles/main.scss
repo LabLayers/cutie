@@ -57,7 +57,7 @@ $grey-dark:  darken($grey, 25%);
 }
 
 // Font location
-$icomoon-font-path: "/icons/fonts";
+$icomoon-font-path: "../icons/fonts";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
