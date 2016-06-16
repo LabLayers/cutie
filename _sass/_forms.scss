@@ -1,6 +1,6 @@
 // Buttons
 .button {
-  background: $brand-color;
+  background: $secondary;
   color: white!important;
   display: inline-block;
   font-family: $base-font-family;
@@ -21,7 +21,7 @@
     }
   }
   &:hover, &:focus, &:active {
-    background: darken($brand-color, 10%);
+    background: darken($secondary, 10%);
     text-decoration: none;
   }
   &:active {
@@ -74,9 +74,7 @@ form {
     border-bottom: 2px solid $black;
     &:focus {
       // Outline for accessibility reasons
-      outline: 2px solid $color-4;
-      // outline-color: $color-3;
-      // background: $color-0; // lighten(lightGray, 15%);
+      outline: 2px solid $black;
       &:invalid {
         outline: 2px solid $red;
       }
@@ -88,7 +86,7 @@ form {
       // border-bottom-color: $black;
     }
     &:empty {
-      // border-bottom-color: gray;
+      // border-bottom-color: $grey;
     }
     &[required]:invalid {
       border-bottom-color: $red;

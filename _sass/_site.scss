@@ -1,9 +1,8 @@
 // Navigation
 #navigation {
-  // border-top: 5px solid $grey-color-dark;
-  // border-bottom: 1px solid $grey-color-light;
-  background: $color-1;
+  background: $primary-darker;
   color: $white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 
   min-height: 56px;
 
@@ -22,7 +21,7 @@
     float: left;
 
     &, &:visited {
-      // color: $grey-color-dark;
+      // color: $grey-dark;
     }
   }
   .site-nav {
@@ -48,7 +47,7 @@
       top: 9px;
       right: 30px;
       background-color: $background-color;
-      border: 1px solid $grey-color-light;
+      border: 1px solid $grey-light;
       border-radius: 5px;
       text-align: right;
       z-index: 9999;
@@ -65,7 +64,7 @@
           width: 18px;
           height: 15px;
           path {
-            fill: $grey-color-dark;
+            fill: $grey-dark;
           }
         }
       }
@@ -88,7 +87,7 @@
 
 // Page header
 header {
-  background-color: $color-3;
+  background-color: $primary;
   color: $white;
 }
 
@@ -105,7 +104,7 @@ header {
 }
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $grey;
 }
 .post-link {
   display: block;
@@ -239,7 +238,7 @@ header {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background: $color-3;
+  background: $secondary;
   color: white;
 
   position: absolute;
