@@ -32,11 +32,12 @@ permalink: /
         <rows class="guest-embed-list">
 
           {% for guest in site.data.guests limit:6 %}
-             <a class="guest guest-vip guest-embed column" href="{{ site.baseurl }}/guests" size="33">
+             <a class="guest guest-vip guest-embed column" href="{{ site.baseurl }}/guests#{{ guest.name | slugify }}" size="33">
                <div class="avatar" style="background-image:url({{ site.baseurl }}/{{ guest.avatar }});"></div>
                <h3>{{ guest.name }}</h3>
              </a>
           {% endfor %}
+          
         </rows>
         <a href="{{ site.baseurl }}/guests"class="button">More Guests <icon class="icon-right"></icon></a>
       </column>

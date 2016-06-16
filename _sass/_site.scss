@@ -128,8 +128,12 @@ header {
 
 // Guests
 .guest {
-  padding-left: 150px;
+  margin-left: 150px;
   margin-bottom: 3em;
+  @include media-query($on-palm) {
+    text-align: center;
+    margin-left: 0;
+  }
   .avatar {
     background-color: lightGray;
     background-image: url(/media/guests/undefined-avatar.png);
@@ -145,53 +149,68 @@ header {
   }
   h2 {
     vertical-align: middle;
-    small {
+    small, .aka {
       font-size: .75em;
       margin-left: 10px;
       font-weight: normal;
+      font-family: $accent-font-family;
+      @include media-query($on-palm) {
+        display: block;
+      }
     }
   }
-  .guest-links {
+  &-links {
     @extend .link-bar;
   }
   @include media-query($on-palm) {
     padding-left: 0;
     .avatar {
-      width: 50px;
-      height: 50px;
+      width: 150px;
+      height: 150px;
       margin-left: auto;
       margin: 0 auto 1em;
       float: none;
     }
   }
-}
-.guest-embed-list {
-  position: relative;
-  max-height: 400px;
-  overflow: hidden;
-}
-.guest-embed {
-  text-align: center;
-  padding-left: 0;
-  display: block;
-  margin-bottom: 1em;
-  // margin: 1em !important;
-  .avatar {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
-    margin-left: auto;
-    float: initial;
-    margin-bottom: 20px;
-    min-height: auto;
+  &-embed-list {
+    position: relative;
+    max-height: 404px;
+    overflow: hidden;
   }
-  h2, h3 {
-    display: block;
-    font-size: 1.25em;
-    font-weight: normal;
+  &-embed {
+    text-align: center;
+    padding-left: 0;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    // margin: 1em !important;
+    min-width: 142px;
+    flex-basis: 142px!important;
+    .avatar {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: auto;
+      margin-left: auto;
+      float: initial;
+      margin-bottom: 20px;
+      min-height: auto;
+    }
+    h2, h3 {
+      display: block;
+      font-size: 1.05em;
+      font-weight: normal;
+      margin-bottom: .35em;
+    }
+    small, .aka {
+      font-size: .85em;
+      font-weight: normal;
+      font-family: $accent-font-family;
+    }
   }
 }
+
+// Link bar
 .link-bar {
   a:not(.twitter-button) {
     margin-right: 10px;
