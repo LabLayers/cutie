@@ -28,7 +28,7 @@ permalink: /
   <container>
     <row>
       <column>
-        <h1>Featured Guests</h1>
+        <h1>Guests</h1>
         <rows class="guest-embed-list">
 
           {% for guest in site.data.guests limit:6 %}
@@ -42,7 +42,7 @@ permalink: /
         <a href="{{ site.baseurl }}/guests"class="button">More Guests <icon class="icon-right"></icon></a>
       </column>
       <column>
-        <h1>Latest Updates</h1>
+        <h1>Updates</h1>
         <ul class="post-list">
           {% for post in site.posts limit:4 %}
             <li>
