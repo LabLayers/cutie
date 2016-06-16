@@ -1,5 +1,5 @@
 # Site settings
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/cutie" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
 # Build settings
