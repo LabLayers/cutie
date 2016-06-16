@@ -32,13 +32,13 @@ permalink: /
         <rows class="guest-embed-list">
 
           {% for guest in site.data.guests limit:6 %}
-             <a class="guest guest-vip guest-embed column" href="/guests" size="33">
-               <div class="avatar" style="background-image:url({{ guest.avatar }});"></div>
+             <a class="guest guest-vip guest-embed column" href="{{ site.baseurl }}/guests" size="33">
+               <div class="avatar" style="background-image:url({{ site.baseurl }}/{{ guest.avatar }});"></div>
                <h3>{{ guest.name }}</h3>
              </a>
           {% endfor %}
         </rows>
-        <a href="/guests"class="button">More Guests <icon class="icon-right"></icon></a>
+        <a href="{{ site.baseurl }}/guests"class="button">More Guests <icon class="icon-right"></icon></a>
       </column>
       <column>
         <h1>Latest Updates</h1>
@@ -53,7 +53,7 @@ permalink: /
             </li>
           {% endfor %}
         </ul>
-        <a href="/Guests" class="button">From the Blog <icon class="icon-right"></icon></a>
+        <a href="{{ site.baseurl }}/blog" class="button">From the Blog <icon class="icon-right"></icon></a>
       </column>
     </row>
   </container>

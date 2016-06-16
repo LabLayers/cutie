@@ -18,11 +18,11 @@
 
 
 {% if site.dev == true %}
-<script src="/scripts/jquery-2.2.2.min.js"></script>
+<script src="{{ site.baseurl }}/scripts/jquery-2.2.2.min.js"></script>
 {% else %}
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 {% endif %}
-<script src="/scripts/site.js"></script>
+<script src="{{ site.baseurl }}/scripts/site.js"></script>
 
 {% if site.dev != true %}
 <script>
