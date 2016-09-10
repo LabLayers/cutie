@@ -25,7 +25,7 @@ body {
   line-height: $base-line-height;
   font-weight: normal;
   color: $text-color;
-  background-color: $background-color;
+  background-color: white; // $background-color;
   -webkit-text-size-adjust: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -36,14 +36,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 ::selection {
-  background: lighten($brand-color, 25%);
+  background:lighten($brand-color, 25%);;
   color: white;
   text-shadow: none;
   opacity: 1;
 }
 ::-moz-selection {
-  background: lighten($brand-color, 25%);
-  color: $text-color;
+  background: lighten($brand-color, 25%);;
+  color: white;
   text-shadow: none;
   opacity: 1;
 }
@@ -112,10 +112,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-family: $title-font-family;
+  font-weight: 400;
   font-size: 48px;
   line-height: 1.5em;
   // margin: 0.35em auto;
-  font-weight: 800;
+  // font-weight: 900;
 }
 h2 {
   font-size: 36px;
@@ -155,8 +156,8 @@ a {
 
 // Blockquotes
 blockquote {
-  color: $grey;
-  border-left: 4px solid $grey-light;
+  color: $gray;
+  border-left: 4px solid $gray-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
   letter-spacing: -1px;
@@ -170,7 +171,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $grey-light;
+  border: 1px solid $gray-light;
   border-radius: 3px;
   background-color: #eef;
   color: $black;
@@ -240,6 +241,41 @@ section {
 // Margin overrides
 .no-margin-bottom { margin-bottom: 0!important; }
 .extra-padding-bottom { margin-bottom: 2em!important; }
+
+// Buttons
+.button {
+  background: $brand-color;
+  color: white!important;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  padding: .5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  margin-bottom: $base-font-size;
+  border: none;
+  outline: none;
+  text-shadow: none;
+  &-large {
+    font-size: $base-font-size * 1.25;
+    @include media-query($on-palm) {
+      font-size: $base-font-size;
+    }
+  }
+  &:hover, &:focus, &:active {
+    background: darken($brand-color, 10%);
+    text-decoration: none;
+  }
+  &:active {
+    box-shadow: inset 0 0 20px rgba(0,0,0,.5);
+  }
+  &:disabled, &-disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
 
 // Icons
 icon {

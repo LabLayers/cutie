@@ -39,9 +39,9 @@ $text-color:       $black;
 $background-color: $white;
 $brand-color:      $primary;
 
-$grey:       #828282;
-$grey-light: lighten($grey, 40%);
-$grey-dark:  darken($grey, 25%);
+$gray:       #828282;
+$gray-light: lighten($gray, 40%);
+$gray-dark:  darken($gray, 25%);
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
