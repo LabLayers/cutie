@@ -1,36 +1,22 @@
 - # Basic Info
-  name: "Pater New"
-  aka: "Big Mac"
-  type: vip
-  # Usernames
-  twitter: "PeterNew"
-  deviantart: "PeterNew"
+  name: "Jane Doe"
+  aka: "Producer"
+  twitter: "JaneDoe"
+  deviantart: "JaneDoe"
   tumblr:
-  # Links
-  youtube: "PeterNew"
-  website: "http://peternew.net/"
-  # Biography
+  youtube: "JaneDoe"
+  website: "http://example.com/"
   bio: "Lt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  # Images
-  avatar: /media/guests/undefined-avatar.png
-  cover:
-  # Color
-  color:
+  avatar: /media/images/undefined-avatar.png
+  accent: "#000"
 - # Basic Info
-  name: "Fluffle Puff"
-  aka: Pink Fluffly (Unicorn?)
-  type: community
-  # Usernames
-  twitter: "Fluffle_Puff"
-  deviantart:
-  tumblr: askflufflepuff
-  # Links
-  youtube:
-  website:
-  # Biography
-  bio: "Lt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  # Images
-  avatar: /media/guests/flufflepuff-avatar.png
-  cover:
-  # Color
-  color:
+  name: "John Doe"
+  aka: "Actor"
+  twitter: "JohnDoe"
+  deviantart: "JohnDoe"
+  tumblr:
+  youtube: "JohnDoe"
+  website: "http://example.com/"
+  bio: "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
+  avatar: /media/images/undefined-avatar.png
+  accent: "#000"
