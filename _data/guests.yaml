@@ -1,5 +1,4 @@
-- # Basic Info
-  name: "Jane Doe"
+- name: "Jane Doe"
   aka: "Producer"
   twitter: "JaneDoe"
   deviantart: "JaneDoe"
@@ -7,16 +6,5 @@
   youtube: "JaneDoe"
   website: "http://example.com/"
   bio: "Lt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  avatar: /media/images/undefined-avatar.png
-  accent: "#000"
-- # Basic Info
-  name: "John Doe"
-  aka: "Actor"
-  twitter: "JohnDoe"
-  deviantart: "JohnDoe"
-  tumblr:
-  youtube: "JohnDoe"
-  website: "http://example.com/"
-  bio: "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."
-  avatar: /media/images/undefined-avatar.png
+  avatar: "https://placehold.it/128/128"
   accent: "#000"
